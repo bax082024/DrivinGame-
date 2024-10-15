@@ -13,6 +13,6 @@ namespace DrivinGame.Models
 
     public void MoveLeft() => Position = (Position > 1) ? Position - 1 : Position;
 
-    public void MoveRight(int roadWidht) => Position = (Position < roadWidht - 2) ? Position + 1 : Position;
+    public void MoveRight(int roadWidth) => Position = (Position < roadWidth - 2) ? Position + 1 : Position;
   }
 }

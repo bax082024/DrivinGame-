@@ -1,0 +1,15 @@
+C:\HjemmeKode\C-Sharp\C-Sharp\DrivingGame\bin\Debug\net8.0\DrivingGame.exe
+C:\HjemmeKode\C-Sharp\C-Sharp\DrivingGame\bin\Debug\net8.0\DrivingGame.deps.json
+C:\HjemmeKode\C-Sharp\C-Sharp\DrivingGame\bin\Debug\net8.0\DrivingGame.runtimeconfig.json
+C:\HjemmeKode\C-Sharp\C-Sharp\DrivingGame\bin\Debug\net8.0\DrivingGame.dll
+C:\HjemmeKode\C-Sharp\C-Sharp\DrivingGame\bin\Debug\net8.0\DrivingGame.pdb
+C:\HjemmeKode\C-Sharp\C-Sharp\DrivingGame\obj\Debug\net8.0\DrivingGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\HjemmeKode\C-Sharp\C-Sharp\DrivingGame\obj\Debug\net8.0\DrivingGame.AssemblyInfoInputs.cache
+C:\HjemmeKode\C-Sharp\C-Sharp\DrivingGame\obj\Debug\net8.0\DrivingGame.AssemblyInfo.cs
+C:\HjemmeKode\C-Sharp\C-Sharp\DrivingGame\obj\Debug\net8.0\DrivingGame.csproj.CoreCompileInputs.cache
+C:\HjemmeKode\C-Sharp\C-Sharp\DrivingGame\obj\Debug\net8.0\DrivingGame.sourcelink.json
+C:\HjemmeKode\C-Sharp\C-Sharp\DrivingGame\obj\Debug\net8.0\DrivingGame.dll
+C:\HjemmeKode\C-Sharp\C-Sharp\DrivingGame\obj\Debug\net8.0\refint\DrivingGame.dll
+C:\HjemmeKode\C-Sharp\C-Sharp\DrivingGame\obj\Debug\net8.0\DrivingGame.pdb
+C:\HjemmeKode\C-Sharp\C-Sharp\DrivingGame\obj\Debug\net8.0\DrivingGame.genruntimeconfig.cache
+C:\HjemmeKode\C-Sharp\C-Sharp\DrivingGame\obj\Debug\net8.0\ref\DrivingGame.dll

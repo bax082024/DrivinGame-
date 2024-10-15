@@ -49,5 +49,33 @@ namespace DrivinGame.Services
         obstacles.Add(new Obstacles(rand.Next(1, RoadWidht - 2), 0));
       }
     }
+
+    private void MoveObstacles()
+    {
+      foreach (var obstacle in obstacles)
+      {
+        obstacle.MoveDown();
+      }
+
+      obstacles = obstacles.Where(o => o.Y < RoadHeight).ToList();
+    }
+
+    private void HandleInput()
+    {
+      if (KeyAvailable)
+      {
+        var key = Console.ReadKey(true).Key;
+        switch (key)
+        {
+          case ConsoleKey.LeftArrow:
+          car.MoveLeft();
+          break;
+        }
+      }
+    }
+
+
+
+    
   }
 }

@@ -17,7 +17,37 @@ namespace DrivinGame.Services
 
     public GameService()
     {
-      
+      car = new Car(RoadWidht / 2);
+      obstacles = new List<Obstacle>();
+      rand = new Random();
+    }
+
+    public void Start()
+    {
+      while (true)
+      {
+        HandleInput();
+        GenerateObstacle();
+        MoveObstacles();
+
+        if (IsGameOver())
+        {
+          Console.Clear();
+          Console.WriteLine("Game Over! Your score" + score);
+          break;
+        }
+
+        Draw();
+        Thread.Sleep(200);
+      }
+    }
+
+    private void GenerateObstacle()
+    {
+      if (rand.Next(0, 5) == 0)
+      {
+        obstacles.Add(new Obstacles(rand.Next(1, RoadWidht - 2), 0));
+      }
     }
   }
 }

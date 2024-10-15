@@ -1,4 +1,4 @@
-# Car Driving Game (Console)
+# Car Driving Game (Terminal)
 
 ## Introduction
 - I made this game to practice coding.

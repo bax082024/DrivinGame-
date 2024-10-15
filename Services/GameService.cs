@@ -79,6 +79,28 @@ namespace DrivinGame.Services
       return obstacles.Any(o => o.Y == RoadHeight - 1 && o.X == car.Position);
     }
 
+    private void Draw()
+    {
+      Console.Clear();
 
+      for (int y = 0; y < RoadHeight; y++)
+      {
+        for (int x = 0; x < RoadHeight; x++)
+        {
+          if (x == 0 || x == RoadHeight - 1)
+          {
+            Console.Write("|");
+          }
+          else if (y == RoadHeight - 1 && x == car.Position)
+          {
+            Console.Write("A");
+          }
+          else if (obstacles.Any(o => o.X == x && o.Y == y))
+          {
+
+          }
+        }
+      }
+    }
   }
 }

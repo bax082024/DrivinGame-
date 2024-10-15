@@ -74,8 +74,11 @@ namespace DrivinGame.Services
       }
     }
 
+    private bool IsGameOver()
+    {
+      return obstacles.Any(o => o.Y == RoadHeight - 1 && o.X == car.Position);
+    }
 
 
-    
   }
 }

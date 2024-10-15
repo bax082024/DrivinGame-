@@ -1,3 +1,5 @@
+
+
 namespace DrivinGame.Models
 {
   public class Car 
@@ -13,6 +15,4 @@ namespace DrivinGame.Models
 
     public void MoveRight(int roadWidht) => Position = (Position < roadWidht - 2) ? Position + 1 : Position;
   }
-
-
 }

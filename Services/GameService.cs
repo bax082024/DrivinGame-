@@ -46,7 +46,7 @@ namespace DrivinGame.Services
     {
       if (rand.Next(0, 5) == 0)
       {
-        obstacles.Add(new Obstacles(rand.Next(1, RoadWidht - 2), 0));
+        obstacles.Add(new Obstacle(rand.Next(1, RoadWidht - 2), 0));
       }
     }
 
@@ -62,7 +62,7 @@ namespace DrivinGame.Services
 
     private void HandleInput()
     {
-      if (KeyAvailable)
+      if (Console.KeyAvailable)
       {
         var key = Console.ReadKey(true).Key;
         switch (key)

@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata.Ecma335;
@@ -9,7 +10,7 @@ namespace DrivinGame.Services
 {
     public class GameService
     {
-        private const int RoadWidth = 20; // Corrected spelling
+        private const int RoadWidth = 20; 
         private const int RoadHeight = 10;
         private Car car;
         private List<Obstacle> obstacles;
@@ -18,7 +19,7 @@ namespace DrivinGame.Services
 
         public GameService()
         {
-            car = new Car(RoadWidth / 2); // Corrected spelling
+            car = new Car(RoadWidth / 2); 
             obstacles = new List<Obstacle>();
             rand = new Random();
         }
@@ -41,19 +42,16 @@ namespace DrivinGame.Services
 
                 Draw();
 
-                if (score % 10 == 0 && speed > 50)
-                {
-                  speed -= 10;
-                }
-                Thread.Sleep(speed); 
+                speed = Math.Max(50, 200 - (score / 10));
+                Thread.Sleep(speed);
             }
         }
 
         private void GenerateObstacle()
         {
-            if (rand.Next(0, 5) == 0)
+            if (obstacles.Count < 10 && rand.Next(0, 5) == 0) 
             {
-                obstacles.Add(new Obstacle(rand.Next(1, RoadWidth - 2), 0)); // Corrected spelling
+                obstacles.Add(new Obstacle(rand.Next(1, RoadWidth - 2), 0));
             }
         }
 
@@ -79,7 +77,7 @@ namespace DrivinGame.Services
                         car.MoveLeft();
                         break;
                     case ConsoleKey.RightArrow: 
-                        car.MoveRight(RoadWidth); // Corrected spelling
+                        car.MoveRight(RoadWidth); 
                         break;
                 }
             }
@@ -92,13 +90,14 @@ namespace DrivinGame.Services
 
         private void Draw()
         {
-            Console.Clear();
+            var screen = new StringBuilder();
 
             for (int y = 0; y < RoadHeight; y++)
             {
-                for (int x = 0; x < RoadWidth; x++) // Corrected spelling
+                Console.SetCursorPosition(0, y);
+                for (int x = 0; x < RoadWidth; x++) 
                 {
-                    if (x == 0 || x == RoadWidth - 1) // Corrected spelling
+                    if (x == 0 || x == RoadWidth - 1) 
                     {
                         Console.Write("|"); 
                     }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DrivingGame")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f4e41c0b9560ca988b352fe20dacfedad7db2fb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0415bf3de8a7bd72aad3610d22fe31ed910c7bf5")]
 [assembly: System.Reflection.AssemblyProductAttribute("DrivingGame")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DrivingGame")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

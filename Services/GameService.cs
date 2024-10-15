@@ -97,10 +97,16 @@ namespace DrivinGame.Services
           }
           else if (obstacles.Any(o => o.X == x && o.Y == y))
           {
-
+            Console.Write("X");
+          }
+          else
+          {
+            Console.Write(" ");
           }
         }
+        Console.WriteLine();
       }
+      Console.WriteLine("Score: " + score);
     }
   }
 }
